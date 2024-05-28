@@ -1,0 +1,144 @@
+ 1.
+public class Exercicio_1 {
+
+    public static void main(String[] args) {
+        tabuada(3);
+    }
+    public static void tabuada(int b){
+     int v;
+     do{
+     int m = 0;
+     v = b;
+     int r = m * v;
+     do{
+         System.out.println(v + "x" + m + "=" + r);
+         m++;
+         r = m * v;
+     }while (m <= 10);
+     if (m > 10){
+         break;
+     }
+     }while (v > 0);
+    }
+    
+}
+
+ 2.
+public class Exercicio_2 {
+
+    public static void main(String[] args) {
+       maior(2,4);
+    }
+    
+    public static void maior(int n, int m){
+        if (n > m ) {
+            System.out.println("o número maior é: " + n);
+        }else if (m > n) {
+            System.out.println("o número maior é: " + m);
+        }else{
+            System.out.println("os números sao iguais");
+        }
+    }
+}
+
+ 3.
+public class Exercicio_3 {
+
+    public static void main(String[] args) {
+     iguais("ABC", "DEF");
+    }
+    public static void iguais(String v, String a){
+        boolean igual = v.equals(a);
+        if (igual == true){
+        System.out.println("são iguais");
+        }else{
+            System.out.println("eles não são iguais");
+        }
+    }
+}
+
+4.
+public class Exercicio_4 {
+
+    public static void main(String[] args) {
+       menor(5,9);
+    }
+    public static void menor(int a, int b){ 
+            if (a < b ) {
+            System.out.println("o número menor é: " + a);
+        }else if (a < b) {
+            System.out.println("o número menor é: " + b);
+        }else{
+            System.out.println("os números são iguais");
+}
+            
+    }
+    
+}
+
+5.
+public class Exercicio_5 {
+
+    public static void main(String[] args) {
+       String("classroom", "clasrrum");
+    }
+    public static boolean String(String s1, String s2){
+        boolean igual = s1.equals(s2);
+      if (igual == true){
+          System.out.println("os nomes são iguais");
+      }else{
+          System.out.println("os nomes não são iguais");
+      }
+      return igual;
+    }
+}
+
+6.
+public class Exercicios_6 {
+
+    public static void main(String[] args) {
+        System.out.println("celcius passado para fahrenheit");
+        System.out.println(temperatura(8));
+    }
+    public static double temperatura(double c){
+       return (c * 1.8) + 32;
+       
+    }
+}
+
+7.
+public class Exercicio_7 {
+
+    public static void main(String[] args) {
+        System.out.println("a área do circulo é " + area(2));
+    }
+    public static double area(double r ){
+        return 3.14 * (r * r); 
+    }
+}
+
+8.
+public class Exercicio_8 {
+
+    public static void main(String[] args) {
+        System.out.println("a média ponderada das notas é: " + nota(1, 3 , 1));
+    }
+    public static double nota(double n1, double n2, double n3){
+        if (n1 == 1 || n1 == 2){
+            n1 = 3;
+        }else if (n1 == 3){
+            n1 = 4;
+        }
+        if (n2 == 1 || n2 == 3){
+            n2 = 3;
+        }else if (n2 == 3){
+            n2 = 4;
+        }
+        if (n3 == 1 || n3 == 2){
+            n3 = 3;
+        }else if (n3 == 3){
+            n3 = 4;
+        }
+        return (n1 + n2 + n3) / 3;
+    }
+}
